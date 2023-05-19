@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    height: 100vh;
+}
+.contenedorNav{
+    display:flex;
+    justify-content:space-between;
+    /*flex-wrap: wrap;*/
+    background-color: rgb(69, 69, 69);
+    padding:1.2rem 5rem;
+    height: 12%;
+}
+.contenedorLogo{
+    width: 25%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorLogo img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.contenedorLogo h2{
+    color:white;
+}
+.navegacion ul{
+    height: 100%;/*la navegacion es el padre*/
+    list-style: none;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+.linkNav{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+   
+}
+.contenedorConferencia{
+    background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.hijoConferencia{
+    padding-right: 5rem;
+   
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.hijoConferencia h1{
+    color:white;
+    text-align: right;
+   
+}
+.textoConferencia{
+    
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;/*negrita*/
+    color:white;
+    text-align: right;
+}
+.btnConf{
+    display: flex;
+    justify-content: flex-end;
+}
+.btnConferenciaOrador{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    margin-right: 10px;
+}
+.btnConferenciaTicket{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    background-color: green;
+}
+
+
+.padreCards{
+    margin-top:50px;
+    text-align: left;
+    width: 80%;
+    height:100vh;
+    margin: 0 auto;
+}
+.oradores{
+    display: flex;
+    justify-content: center;
+}
+.conoce{
+    font-size: 15px;
+    font-weight: 500;
+}
+.sectionOradores h2{
+font-weight: 400;
+}
+
+.card{
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height:80%;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.card img{
+    width:100%;
+    height: 55%;
+    object-fit: cover;
+   
+}
+
+.cardBody{
+    margin:15px;
+
+}
+
+.lugarFecha{
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;    /* colocale el aling y el justify */
+    border: 1px solid white;
+    
+    
+    
+}
+
+.honolulu{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+.fecha{
+    background-color: black;
+    width:100%;
+    height: 100%;
+    text-align: left;
+    
+
+}
+.texto{
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+ }
+.botonfecha {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 20px;
+    width: 120px;
+    text-align: center;
+    justify-content: flex-start;
+    
+
+}
+.botonfecha a{
+    text-decoration: none;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    
+}
+.orador{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:15px;
+}
+.orador h2{
+    font-weight: 500;
+}
+.conviertete{
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+
+.icon{
+    color: #3ad110;
+    font-size: 2.5rem;
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+   
+    
+    
+}
+.name{
+    margin:15px;
+}
+.enviar{
+  background-color: rgb(108, 216, 108);
+  padding: 5px;
+  font: bold .6em arial;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width:100vh;
+  cursor: pointer;
+}
+.footer{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(111, 111, 170);
+    padding: 25px;
+   
+    align-items: center;
+    
+}
+.footer a{
+    height: 100%;/*la navegacion es el padre*/
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    flex-direction: row;
+    color:white;
+}
+
+/*MIERCOLES 5/4
+FONTAWESOME -ICONOS
+FAVICON
+FUENTE PROPIA DESCARGADA EN LA COMPU
+position:absolute
+position:relative
+
+-mediasqueries responsive
+-bootstrap
+-bem
+-animaciones-transiciones- transformaciones
+-pseudoclases pseudoelementos :hover 
+
+*/
+/*cuando la pantalla mida menos de 600 px*/
+/*cuando la pantalla sea de 601px para arriba */
+
+/* carga estos estilos */
+
+/*breakpoint para celular de 0 a 768px*/
+@media screen and (max-width: 767px)   {
+    .contenedorNav{
+        background-color: rgb(50, 157, 245);
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion .listaNav{
+        flex-direction: column;
+    }
+    .padreCards{
+       display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 120%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        width:100%;
+        height:100%;
+        border:1px solid rgb(180, 180, 180);
+        border-radius: 5px;
+    }
+    .card img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+       
+    }
+    .cardBody{
+        height: 100%;
+        width: 120%;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .lugarFecha{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white; 
+        
+    }
+    .honolulu{
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .fecha{
+        background-color: black;
+        width:100%;
+        height: 100%;
+        text-align: right;
+        
+    
+    }
+    .footer{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(111, 111, 170);
+        padding: 25px;
+       
+        align-items: center;
+        
+    }
+
+}
+
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /*se cargaron los estilos dentro de las llaves*/
+    .contenedorNav{
+        background-color: rgb(245, 213, 50);
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+   
+
+}
+
+/*notebook*/
+@media screen and (min-width:1024px) and (max-width: 1400px) {
+    .contenedorNav{
+        background-color: rgb(58, 66, 68);
+    }
+
+}
+
+@media screen and (min-width:1401px) {
+    
+}
